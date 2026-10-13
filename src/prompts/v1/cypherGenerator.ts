@@ -20,6 +20,9 @@ export const getSystemPrompt = async (schema: string, context: string): Promise<
       'Return flat values (no nested objects), use NULLS LAST when sorting',
       'Filter early in patterns, keep max 3 relationship hops',
       'Return ONLY plain text query (no markdown, no "cypher" wrapper)',
+      'Do not miss the RETURN clause',
+      'Do not use escape \n in the query, it breaks the validation',
+      'Do not use GROUP BY clause, it does not work'
     ],
     examples: [
       { question: 'List all courses', query: 'MATCH (c:Course) RETURN c.name AS courseName, c.url AS url ORDER BY c.name' },

@@ -3,7 +3,8 @@ export const config = {
   httpReferer: '',
   xTitle: 'IA Devs - Sales Analytics Reporter',
   models: [
-    'liquid/lfm-2.5-2.6b:free',
+    //'liquid/lfm-2.5-2.6b:free',
+    'nvidia/nemotron-3-super-120b-a12b:free'
   ],
   provider: {
     sort: {
